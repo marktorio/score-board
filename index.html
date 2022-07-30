@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <title>Basketball ScoreBoard</title>
+  </head>
+
+  <body>
+    <!-- Container ScoreBoard -->
+    <div class="container">
+      <div class="box1">
+        <h1>HOME</h1>
+        <!-- Sccore Box -->
+        <div class="board1">
+          <p class="zero" id="score1-el">0</p>
+        </div>
+        <!-- Sccore Button -->
+        <div class="score-btn-1">
+          <button onclick="plus1()">+1</button>
+          <button onclick="plus2()">+2</button>
+          <button onclick="plus3()">+3</button>
+        </div>
+      </div>
+
+      <div class="box2">
+        <h1>GUEST</h1>
+        <div class="board2">
+          <p class="zero" id="score2-el">0</p>
+        </div>
+        <!-- Score Button -->
+        <div class="score-btn-2">
+          <button onclick="add1()">+1</button>
+          <button onclick="add2()">+2</button>
+          <button onclick="add3()">+3</button>
+        </div>
+      </div>
+    </div>
+    <!-- Option Button -->
+    <div class="option-container">
+      <button id="reset-btn" onclick="reset()">Reset</button>
+      <!--
+        <div class="quarter">
+            <button id="quarter-btn" onclick="quarter1()">1st Quarter</button>
+            <button id="quarter-btn" onclick="quarter2()">2nd Quarter</button>
+            <button id="quarter-btn" onclick="quarter3()">3rd Quarter</button>
+            <button id="quarter-btn" onclick="quarter4()">4th Quarter</button>
+            <p id="quarter-el">Quarter:</p>
+        </div>-->
+    </div>
+    <!-- Javascript -->
+    <script src="index.js"></script>
+  </body>
+</html>

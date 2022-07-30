@@ -1,0 +1,122 @@
+@font-face{
+    font-family:'digital';
+    src: url('digital.ttf');
+   }
+body {
+    margin: 0;
+    text-align: center;
+    background-color: #73a8ee;
+}
+h1 {
+    color: white;
+}
+
+/*scoreboard*/
+.container {
+    background-color: #0c3974;
+    margin: 60px auto 10px;
+    display: flex;
+    justify-content: space-around;
+    height: 320px;
+    width: 600px;
+    border: 0;
+    border-radius: 20px;
+    font-family:'digital';
+    box-shadow: 0 0 10px black;
+}
+@media all and (max-width: 700px) {
+   .container {
+        width: 500px;
+   }
+}
+
+/*score box*/
+.board1, .board2 {
+    margin-top: -10px;
+    width: 200px;
+    height: 120px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background: black;
+}
+@media all and (max-width: 700px) {
+    .board1, .board2 {
+        width: 150px;
+        height: 100px;
+    }
+}
+
+/*Score Number*/
+.zero {
+    font-size: 70px;
+    font-family:'digital';
+    color: red;
+    text-align: center;
+    margin-top: 26px;
+}
+@media all and (max-width: 700px) {
+    .zero {
+        margin-top: 15px;
+    }
+}
+/*Score button*/
+.score-btn-1 button, .score-btn-2 button {
+    margin-top: 40px;
+    width: 50px;
+    height: 50px;
+    font-family:'digital';
+    font-size: 20px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    background: none;
+    cursor: pointer;
+}
+
+/*Score button hover*/
+.score-btn-1 button:hover, .score-btn-2 button:hover {
+    background:black;
+}
+
+/*Option Button*/
+.option-container {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    width: 600px;
+    height: 85px;
+    background-color: #0c3974;
+    margin: 0 auto 50px;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+}
+@media all and (max-width: 700px) {
+    .option-container {
+        width: 500px;
+   }
+}
+
+.option-container button {
+    font-family:'digital';
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    border: 2px solid white;
+    background: none;
+    color: white;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.option-container button:hover {
+    background-color: black;
+    box-shadow: 0 0 20px black;
+}
+/*
+#quarter-el {
+    color: white;
+    font-size: 20px;
+    margin-top: 5px;
+    font-family: 'Montserrat';
+}
+*/
