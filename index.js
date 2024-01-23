@@ -1,5 +1,6 @@
 let score1El = document.getElementById("score1-el")
 let score2El = document.getElementById("score2-el")
+let quarterEl = document.getElementById("quarter-el")
 /*let quarterEl = document.getElementById("quarter-el")*/
 let count1 = 0
 let count2 = 0
@@ -35,28 +36,28 @@ function add3() {
 //Score Board reset button
 function reset() {
     let reset = 0
+    let resetQuarter = "Quarter: "
     score1El.textContent = reset
     score2El.textContent = reset
+    quarterEl.textContent = resetQuarter
     count1 = 0
     count2 = 0
 }
 
-//Quarter Button
-/*
+
 function quarter1() {
     quarter1 = "1st Quarter"
-    quarterEl.textContent += quarter1
+    quarterEl.textContent = "Quarter:" + quarter1
 }
 function quarter2() {
     quarter2 = "2nd Quarter"
-    quarterEl.textContent += quarter2
+    quarterEl.textContent = "Quarter:" + quarter2
 }
 function quarter3() {
     quarter3 = "3rd Quarter"
-    quarterEl.textContent += quarter3
+    quarterEl.textContent = "Quarter:" + quarter3
 }
 function quarter4() {
     quarter4 = "4th Quarter"
-    quarterEl.textContent += quarter4
+    quarterEl.textContent = "Quarter:" + quarter4
 }
-*/
